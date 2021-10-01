@@ -1,0 +1,154 @@
+// METABOX
+#sit_custom_gallery .inside {
+    padding: 0;
+}
+.sitg-image-preview-list-wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.sitg-image-preview-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    margin: 0 -0.5rem;
+}
+#no-images-meta-info {
+    margin: 1rem 0.5rem;
+}
+.sitg-mb-list-ui-handle {
+    font-size: 0;
+    vertical-align: middle;
+    padding: 0.75rem 0.5rem;
+    position: relative;
+}
+.sitg-mb-list-item {
+    font-size: 1rem;
+    position: relative;
+    width: 180px;
+    padding: 8px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.sitg-mb-list-ui-handle.ui-selected .sitg-mb-list-item {
+    border: 2px solid #007cba;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+.sitg-mb-list-ui-handle.is-featured .sitg-mb-list-item {
+    background: rgba($green, 0.2);
+}
+.sitg-mb-list-img {
+    background-color: rgba(0,0,0,0.2);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.sitg-mb-list-item:hover .sitg-mb-list-img {
+    opacity: 0.5;
+}
+.sitg-mb-list-item-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0.5rem 0 0.25rem;
+}
+.sitg-mb-buttons {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    text-align: left;
+}
+.sitg-mb-buttons-btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    display: inline-block;
+    margin: 0 6px;
+    background: rgba(255,255,255,0.8);
+    border: 2px solid white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    text-align: center;
+}
+.sitg-mb-buttons-btn:hover {
+    background: rgba(255,255,255,1);
+}
+.sitg-mb-list-item:hover .sitg-mb-buttons-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.sitg-mb-buttons-btn {
+    i {
+        line-height: 36px;
+        font-size: 1.25rem;
+    }
+    &:hover {
+        i {
+            color: $red;
+        }
+    }
+}
+.sitg-mb-buttons-btn.selected {
+    background: rgba(255,255,255,1);
+    color: #007cba;
+}
+.sitg-mb-btn-bottom {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-top: 0.75rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: right;
+}
+.sitg-mb-btn-bottom .button {
+    font-size: 16px;
+}
+
+// Overlay s editaci nazvu obrazku
+.sitg-mb-edit-layer {
+    background: $white;
+
+    position: absolute;
+    top: 0;
+    left: -18px;
+    width: calc( 100% + 36px);
+    height: 100%;
+    padding: 42px 12px 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    display: none;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.sitg-form-control {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    resize: none;
+}
+.sitg-mb-edit-title-label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.sitg-mb-btn-close {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 18px;
+    color: #a00;
+    cursor: pointer;
+}

@@ -1,2 +1,1 @@
-# sit-custom-gallery
-Wordpress plugin
+# wp-gallery-plugin

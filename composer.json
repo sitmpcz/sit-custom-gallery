@@ -1,0 +1,19 @@
+{
+  "name": "sitmpcz/wp-gallery-plugin",
+  "description": "WordPress Plugin gallery",
+  "keywords": ["wordpress", "plugin", "gallery"],
+  "homepage": "https://sitmp.cz",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jaroslav Dvořák",
+      "email": "dvorakja@plzen.eu",
+      "homepage": "https://sitmp.cz"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": "^5.6 || ^7.0 || ^8.0",
+    "composer/installers": "~1.0"
+  }
+}

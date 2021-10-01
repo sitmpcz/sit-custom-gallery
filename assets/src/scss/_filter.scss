@@ -1,0 +1,56 @@
+// FILTER BAR
+
+.sitg-filter-bar {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    background: #fff;
+}
+.sitg-stick-on .sitg-filter-bar {
+    position: sticky;
+    top: 1.5rem;
+    z-index: 100;
+    padding-top: 2rem;
+    border-color: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.sitg-field-group {
+    float: left;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 0.75rem;
+}
+.sitg-field-group-right {
+    text-align: right;
+    padding-right: 0.75rem;
+}
+.sitg-btn-group button {
+    margin-left: 0.5rem;
+}
+.sitg-button {
+    width: 40px;
+    height: 40px;
+    background: #f3f5f6;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    line-height: 1;
+
+    span {
+        line-height: 22px;
+    }
+}
+.sitg-modal-open {
+    background: #007cba;
+    color: #fff;
+}
+.sitg-btn-delete span {
+    line-height: 20px;
+}
+.sitg-btn-delete-all {
+    float: left;
+}
