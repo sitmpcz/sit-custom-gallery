@@ -16,7 +16,7 @@ function sitg_ajax_get_image(){
     require_once( __DIR__ . '/config.php' );
 
     // Pokud nam AJAX nepreda id obrazku serem na to
-    if( !isset( $_GET["pid"] ) && !is_int( $_GET["pid"] ) {
+    if( !isset( $_GET["pid"] ) && !is_int( $_GET["pid"] ) ) {
         $image = false;
     }
 
