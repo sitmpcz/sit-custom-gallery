@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SIT galerie
  * Description: Nahrávání a správa galerií k postům
- * Version: 1.2.8
+ * Version: 1.3.3
  * Author: SIT:Jaroslav Dvořák
  **/
 
