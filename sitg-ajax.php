@@ -16,7 +16,7 @@ function sitg_ajax_get_image(){
     require_once( __DIR__ . '/config.php' );
 
     // Pokud nam AJAX nepreda id obrazku serem na to
-    if( !isset( $_GET["pid"] ) && !filter_var( $_GET["pid"], FILTER_VALIDATE_INT ) ) {
+    if( !isset( $_GET["pid"] ) && !is_int( $_GET["pid"] ) {
         $image = false;
     }
 
@@ -72,7 +72,7 @@ function sitg_ajax_get_images(){
     require_once( __DIR__ . '/config.php' );
 
     if( !isset( $_POST["sort"] ) && $_POST["sort"] == ""
-        && !isset( $_GET["post_id"] ) && !filter_var( $_GET["post_id"], FILTER_VALIDATE_INT ) ) {
+        && !isset( $_GET["post_id"] ) && !is_int( $_GET["post_id"] ) ) {
         return false;
     }
 
@@ -138,9 +138,9 @@ function sitg_ajax_edit_image(){
 	$response = false;
 
 	// Pokud nam AJAX nepreda id obrazku serem na to
-	if( isset( $_POST["pid"] ) && filter_var( $_POST["pid"], FILTER_VALIDATE_INT ) ) {
+	if( isset( $_POST["pid"] ) && is_int( $_POST["pid"] ) ) {
 
-		$pid = filter_var( $_POST["pid"], FILTER_VALIDATE_INT );
+		$pid = $_POST["pid"];
 		$title = sanitize_text_field( $_POST["title"] );
 
 		$response = sitg_update_title( $pid, $title );
@@ -194,7 +194,7 @@ function sitg_ajax_remove_one_image(){
     $state = 1;
 
     // Pokud nam AJAX nepreda id obrazku serem na to
-    if( !isset( $_POST["pid"] ) && !filter_var( $_POST["pid"], FILTER_VALIDATE_INT ) ) {
+    if( !isset( $_POST["pid"] ) && !is_int( $_POST["pid"] ) ) {
     	$state = 0;
     }
 
@@ -240,7 +240,7 @@ function sitg_ajax_remove_images(){
     require_once(__DIR__ . '/conf.php');
 
     // Pokud nam AJAX nepreda id obrazku serem na to
-    if( !isset( $_POST["img_ids"] ) && !filter_var( $_POST["img_ids"], FILTER_VALIDATE_INT ) ) {
+    if( !isset( $_POST["img_ids"] ) && !is_int( $_POST["img_ids"] ) ) {
         $image = false;
     }
 
